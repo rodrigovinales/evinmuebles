@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  
+    font-size:62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #343A40;
+    animation-duration: 2s;
+    animation-name: appearAll;
+  }
+  /* HEADER  */
+  .header {
+    background-color: #0c0000c0;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.header__img {
+  width: 150px;
+  height: 200px;
+  z-index: 5;
+}
+.mb-0 {
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+/* END HEADER  */
+
+  @keyframes appearAll {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+
+.mapGoog {
+  margin-top: 80px;
+  text-align: center;
+}
+
+ .carouselEstilado{
+  text-align: center;
+ }
+
+ .carousel-inner img {
+  height: 300px;
+  width: 100%;
+}
+
+ footer{
+  width: 100%;
+  background: #0c0000c0;
+  
+  color: white;   
+  font-family: 'montserrat';
+  font-size: 0.7rem;
+  
+}
+
+.container-footer-all{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.container-body{
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1{
+  max-width: 400px;
+}
+
+.colum1 h1{
+  font-size: 22px;
+}
+
+.colum1 p{
+  font-size: 14px;
+  color: #C7C7C7;
+  margin-top: 20px;
+}
+
+.colum2{
+  max-width: 400px;
+  
+}
+
+.colum2 h1{
+  font-size: 22px;
+}
+
+.footer__row{
+  margin-top: 20px;
+  display: flex;
+}
+
+.footer__row img{
+  width: 36px;
+  height: 36px;
+}
+
+.footer__row label{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #C7C7C7;
+}
+
+.colum3{
+  max-width: 400px;
+}
+
+.colum3 h1{
+  font-size: 22px;
+}
+
+.row2{
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img{
+  width: 36px;
+  height: 36px;
+}
+
+.row2 label{
+  margin-top: 10px;
+  margin-left: 20px;
+  max-width: 140px;
+}
+.row2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-footer{
+  width: 100%;  
+  background: #101010;
+}
+
+.footer{
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.copyright{
+  color: #C7C7C7;
+  text-align: center;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.information a{
+  text-decoration: none;
+  color: #C7C7C7;
+}
+
+
+
+.formbusqueda {
+  margin-left: 15px;
+}
+
+.buscaPropiedad{
+  margin-left: 50%;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+
+
+.coloredboot{
+  background-color: lightgray;
+  font-size: 14px;
+}
+.colorboot:hover{
+  background-color: black;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCTOS */
+
+.listaProductos {
+  background-color: #4a4c4d;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 80px;
+  text-align: center;
+  justify-content: center;
+
+}
+.tituloCategoria {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.tituloNombre {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 100;
+}
+.productosLista {
+  width: 20rem;
+  border:1px solid black;
+  border-radius:5px;
+  margin:5px;
+  background-color: rgb(236, 181, 108);
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+.tituloPrecio {
+    font-size: 1rem;
+    text-align: center;
+}
+.card-img-top {
+   height: 50%;
+}
+
+/* END PRODUCTOS  */
+
+
+.modalIndex {
+  background-image: url(../images/imagenes/evinlogo.png);
+  background-size: 100px;
+  align-items: center;
+  text-align: center;
+  background-position-y: 40px;
+  background-position-x: 50px;
+  background-repeat: no-repeat;
+}
+/* FIN ESTILOS MODAL  */
+
+.listaenHTML {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  padding: 2px;
+  margin: 2px;
+  justify-content: space-between;
+  align-items:center;
+  font-size: 20px;
+}
+.boton-eliminarItem {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/icon/minus-sign.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  background-color:red;
+  border-radius: 50%;
+}
+.boton-sumarItem{
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/icon/add.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;   
+  background-color: green;
+  border-radius: 50%;
+}
+.expandImg {
+  width: 100px;
+  height: 80px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+/* CARRITO */
+
+
+#boton-carrito {
+  border: none;
+  color: royalblue;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px 5px;
+  transition: all .3s;
+}
+#boton-carrito:hover {
+  cursor: pointer;
+  color: white;
+  background-color: royalblue;
+}
+#boton-carrito:focus {
+  outline: none;
+}
+
+.boton-agregar {
+  background-color: royalblue;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px;
+  border: none;
+}
+.boton-agregar:hover {
+  cursor: pointer;
+}
+.boton-agregar:focus {
+  outline: none;
+}
+
+
+
+
+/* END CARRITO  */
+
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.productoEnCarrito:hover {
+  border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+.boton-eliminar:focus {
+  outline: none;
+}
+
+img.img-thumbnail {
+  width: 80%;
+  height: 80%;
+}
+
+
+
+ /* MEDIA QUERIES */
+
+
+@media (min-width: 1281px) {
+  
+  
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container-body{
+    flex-wrap: wrap;
+  }
+  
+  .colum1{
+    max-width: 100%;
+  }
+  
+  .colum2,
+  .colum3{
+    margin-top: 40px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+  
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  footer{
+    width: 100%;  
+  }
+  .container-footer-all{
+    width: 100%;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 200px;
+  }
+  .header__img {
+    width: 30%;
+    max-height: 100px;
+  }
+  .header {
+    height: auto;
+  }
+
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .modalIndex {
+    background-size: 50px;
+  }
+  footer{
+    width: 100%;
+    font-size: 5px;  
+  }
+  .container-footer-all{
+    width: 100%;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 400px;
+  }
+  .header__img {
+    width: 30%;
+    max-height: 100px;
+  }
+  .header {
+    height: auto;
+  }
+  .colum1 {
+    display: none; 
+  }
+  .footer {
+    display: block;
+    text-align: center; 
+  } 
+  
+}
