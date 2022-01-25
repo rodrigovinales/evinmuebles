@@ -1,14 +1,30 @@
 localStorage.clear();
 let productos = [];
 
-fetch('inventario.json')
+fetch('../js/inventario.json')
   .then((res) => res.json())
   .then((data) => {
     productos = data;
     muestraProductos(productos);
   })
 
-  
+/*
+  fetch (`../js/inventario.json`, {
+    method: 'POST'
+  })
+  .then(res => res.json())
+  .then(res => {
+    if (res.success) {
+      //mensaje correcto
+    }else{
+    //mensaje de error
+    }
+  })
+  .catch(function() {
+    alert("No se puede conectar con la base Backend, intente mas tarde");
+  });
+
+  */
 
 const listadoDeProductos = document.getElementById('contenidoProductos')
 
