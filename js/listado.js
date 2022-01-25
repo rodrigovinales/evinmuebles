@@ -1,13 +1,14 @@
 localStorage.clear();
 let productos = [];
 
-fetch('../js/inventario.json')
+fetch('./js/inventario.json')
   .then((res) => res.json())
   .then((data) => {
     productos = data;
     muestraProductos(productos);
   })
 
+  
 
 const listadoDeProductos = document.getElementById('contenidoProductos')
 
@@ -69,7 +70,7 @@ buscador.addEventListener('input', () => {
   else if (buscar(search).length === 0) {
     Swal.fire({
       title: `No existen propiedades en la busqueda seleccionada`,
-      imageUrl: "../images/imagenes/evinlogo.png",
+      imageUrl: "./images/imagenes/evinlogo.png",
       text: "Por favor seleccione otras propiedades.",
       imageHeight: 200,
     })
