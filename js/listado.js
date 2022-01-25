@@ -1,32 +1,31 @@
 localStorage.clear();
-let productos = [];
-imgLogo = "../images/imagenes/evinlogo.png";
-propiedades = './inventario.json'
+const imgLogo = "../images/imagenes/evinlogo.png";
 
-fetch(propiedades)
-  .then((res) => res.json())
-  .then((data) => {
-    productos = data;
-    muestraProductos(productos);
-  })
+// fetch("./inventario.json")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     productos = data;
+//     muestraProductos(productos);
+//   })
 
-/*
-  fetch (`../js/inventario.json`, {
-    method: 'POST'
-  })
-  .then(res => res.json())
-  .then(res => {
-    if (res.success) {
-      //mensaje correcto
-    }else{
-    //mensaje de error
-    }
-  })
-  .catch(function() {
-    alert("No se puede conectar con la base Backend, intente mas tarde");
-  });
 
-  */
+
+  // fetch ("./inventario.json", {
+  //   method: 'POST'
+  // })
+  // .then(res => res.json())
+  // .then(res => {
+  //   if (res.success) {
+  //     //mensaje correcto
+  //   }else{
+  //   //mensaje de error
+  //   }
+  // })
+  // .catch(function() {
+  //   alert("No se puede conectar con la base Backend, intente mas tarde");
+  // });
+
+  
 
 const listadoDeProductos = document.getElementById('contenidoProductos')
 
@@ -74,6 +73,7 @@ const muestraProductos = (listado) => {
 
 }
 
+muestraProductos(productos)
 
 const buscador = document.getElementById('busqueda')
 const buscar = (search) => {
