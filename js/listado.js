@@ -1,7 +1,9 @@
 localStorage.clear();
 let productos = [];
+imgLogo = "../images/imagenes/evinlogo.png";
+propiedades = './inventario.json'
 
-fetch('../js/inventario.json')
+fetch(propiedades)
   .then((res) => res.json())
   .then((data) => {
     productos = data;
@@ -86,7 +88,7 @@ buscador.addEventListener('input', () => {
   else if (buscar(search).length === 0) {
     Swal.fire({
       title: `No existen propiedades en la busqueda seleccionada`,
-      imageUrl: "../images/imagenes/evinlogo.png",
+      imageUrl: imgLogo,
       text: "Por favor seleccione otras propiedades.",
       imageHeight: 200,
     })
