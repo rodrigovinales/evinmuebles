@@ -1,7 +1,7 @@
 localStorage.clear();
 let productos = [];
 
-fetch('./js/inventario.json')
+fetch('inventario.json')
   .then((res) => res.json())
   .then((data) => {
     productos = data;
